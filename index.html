@@ -17,21 +17,32 @@
     <section class="header">
         <nav>
             <ul>
-                <a href="index.html#introduction">Introduction</a>
-                <a href="index.html#course">Courses</a>
-                <a href="index.html#slick-image">Images</a>
-                <a href="index.html#access">Access</a>
+                <li><a href="index.html#introduction">Introduction</a></li>
+                <li><a href="index.html#course">Courses</a></li>
+                <li><a href="index.html#slick-image">Images</a></li>
+                <li><a href="index.html#access">Access</a></li>
             </ul>
         </nav>
 
         <div class="main-viusal">
+                <h2><img src="Sozai/images/logo.png" alt=""></h2>
+                <p>We are Web Designers</p>
+                
+               <div class="single-item">
                 <img src="Sozai/images/background1.jpg" alt="">
-            </div>
+                <img src="Sozai/images/background2.jpg" alt="">
+                <img src="Sozai/images/background3.jpg" alt="">
+                <img src="Sozai/images/background4.jpg" alt="">
+                <img src="Sozai/images/background5.jpg" alt="">
+                </div>
+                
+<!--
             <div class="title">
                 <h2><img src="Sozai/images/logo.png" alt=""></h2>
                 <p>We are Web Designers</p>
             </div>
-      
+-->
+        </div>
 
     </section>
 
@@ -173,11 +184,18 @@
                 // instead of a settings object
             ]
         });
+        
+        $('.single-item').slick({
+            fade:true,
+            arrows:false,
+            autoplay:true,
+            autoplaySpeed: 2000
+        })
     </script>
 </body>
 
 <footer>
-    <p>2019　Happy Hack Inc.</p>
+    &copy; 2019　Happy Hack Inc.
 </footer>
 
 </html>
