@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!--    jQueryの読み込み-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--    css-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!--js-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <ul>
+                <a href="">Introduction</a>
+                <a href="">Courses</a>
+                <a href="">Images</a>
+                <a href="">Access</a>
+            </ul>
+        </nav>
+
+        <div class="main-viusal">
+            <div class="slider">
+                <img src="Sozai/images/background1.jpg" alt="">
+            </div>
+            <div class="title">
+                <h2><img src="Sozai/images/logo.png" alt=""></h2>
+                <p>We are Web Designers</p>
+            </div>
+        </div>
+
+    </section>
+
+    <h2>Introduction</h2>
+
+    <section class="first-section">
+        <div class="first-box">
+            <div class="box1">
+                <img src="Sozai/images/introduction_001.jpg" width="500px" height="300px">
+            </div>
+
+            <div class="box2">
+                <p>Happy Hackはいまをときめく若者がITを活用したもの<br>
+                    づくりに取り組める環境を提供します。<br>
+                    特に、Webデザイン領域のプログラミングを学習して<br>
+                    いる生徒が一番積極的に活動しています。<br>
+                    誰でも最初は初心者。それを一番知っている我々がプロ<br>
+                    グラミンぐへの第一歩を踏み出すお手伝いをさせていた<br>
+                    だきます。</p>
+                <a href="">会員登録</a>
+            </div>
+        </div>
+
+        <div class="second-box">
+            <div class="box3">
+                <p>Happy Hackでは「楽しさ」と「真剣さ」をモットー<br>
+                    にプログラミングを学びます。コースは全部で7つ準備<br>
+                    をしています。<br>
+                    WebデザインからWebサービス、3DゲームやiPhone<br>
+                    アプリまで幅広くお楽しみいただけます。<br>
+                    自分の想いをカタチにして発信することをぜひこの場で<br>
+                    体験してみてください。世界が変わって見えるかもしれ<br>
+                    ません。
+                </p>
+                <a href="">会員登録</a>
+            </div>
+
+            <div class="box4">
+                <img src="Sozai/images/introduction_002.jpg" width="500px" height="300px">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="second-section">
+        <h2>Courses</h2>
+        <div class="courses">
+            <div id="html" class="courseBox">
+                <img src="Sozai/images/html.png">
+                <p>HTMLコース</p>
+                <a href="">このコースを受ける</a>
+            </div>
+            <div id="css" class="courseBox">
+                <img src="Sozai/images/css.png">
+                <p>CSSコース</p>
+                <a href="">このコースを受ける</a>
+            </div>
+            <div id="unity" class="courseBox">
+                <img src="Sozai/images/unity.png">
+                <p>Unityコース</p>
+                <a href="">このコースを受ける</a>
+            </div>
+            <div id="ruby" class="courseBox">
+                <img src="Sozai/images/ruby.png">
+                <p>Rubyコース</p>
+                <a href="">このコースを受ける</a>
+            </div>
+            <div id="js" class="courseBox">
+                <img src="Sozai/images/js.png">
+                <p>JavaScriptコース</p>
+                <a href="">このコースを受ける</a>
+            </div>
+            <div id="swift" class="courseBox">
+                <img src="Sozai/images/swift.png" alt="">
+                <p>Swiftコース</p>
+                <a href="">このコースを受ける</a>
+            </div>
+            <div id="go" class="courseBox">
+                <img src="Sozai/images/go.png" alt="">
+                <p>Goコース</p>
+                <a href="">このコースを受ける</a>
+            </div>
+        </div>
+    </section>
+
+    <h2>Images</h2>
+
+
+    <section class="third-section">
+
+
+        <div class="responsive">
+            <img src="Sozai/images/background1.jpg" alt="">
+            <img src="Sozai/images/background2.jpg" alt="">
+            <img src="Sozai/images/background3.jpg" alt="">
+            <img src="Sozai/images/background4.jpg" alt="">
+            <img src="Sozai/images/background5.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="fourth-section">
+        <h2>Access</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13121.25251200182!2d135.4924486!3d34.6972813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1613821283768!5m2!1sja!2sjp" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+
+    <script>
+        $('.responsive').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+</body>
+
+<footer>
+    <p>2019　Happy Hack Inc.</p>
+</footer>
+
+</html>
