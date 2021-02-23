@@ -106,7 +106,7 @@
 
 h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     color: blue;
     font-family: "Futura";
     margin-top: 50px;
@@ -124,8 +124,12 @@ h2 {
 }
 
 .first-box {
-    padding-top: 20px;
-    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    padding-bottom:40px;
+    
 }
 
 .box1 {
@@ -133,8 +137,8 @@ h2 {
 }
 
 .box1 img{
-    width: 500px;
-    object-fit: contain;
+    width: 100%;
+    height: auto;
 }
 
 .box2 {
@@ -162,24 +166,24 @@ h2 {
 }
 
 .second-box {
-    padding-top: 20px;
-    display: flex;
+     width: 80%;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    padding-bottom:40px;
+}
+
+.box3{
+    width: 50%;
 }
 
 .box3 p{
-        width: 400px;
+    width: 400px;
+    height: auto;
     margin: 0 auto 20px;
 }
 
 .box3 a {
-/*
-    background-color: yellow;
-    color: white;
-    padding: 10px;
-    border-radius: 20px;
-    text-decoration: none;
-    text-align: center;
-*/
     display: block;
     margin: 30px auto;
     text-decoration: none;
@@ -194,6 +198,17 @@ h2 {
     font-weight: bold;
 }
 
+.box4 {
+    width: 50%;
+}
+
+.box4 img{
+     width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+
+}
+
 #particle.js{
     position: absolute;
     top: 0;
@@ -206,16 +221,6 @@ h2 {
     
 }
 
-/*
-.box4 {
-    width: 50%;
-}
-*/
-
-.box4 img{
-    width: 500px;
-    object-fit: contain;
-}
 
 .second-section {
     background-color: #d6e6f9;
