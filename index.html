@@ -39,15 +39,7 @@
                 <div class="image4"></div>
                 <div class="image5"></div>
             </div>
-
-            <!--
-            <div class="title">
-                <h2><img src="Sozai/images/logo.png" alt=""></h2>
-                <p>We are Web Designers</p>
-            </div>
--->
         </div>
-
     </section>
 
     <h2>Introduction</h2>
@@ -129,14 +121,16 @@
                 <p>Goコース</p>
                 <a href="">このコースを受ける</a>
             </div>
+        <div id="particle.js"></div>
         </div>
+        
     </section>
 
     <h2>Images</h2>
 
-
     <section class="third-section" id="slick-image">
 
+        <button class="slick-prev"></button>
 
         <div class="responsive">
             <img src="Sozai/images/background1.jpg" alt="">
@@ -152,21 +146,23 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13121.25251200182!2d135.4924486!3d34.6972813!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1613821283768!5m2!1sja!2sjp" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
-
     <script>
         $('.responsive').slick({
             dots: true,
+            arrows: true,
             infinite: false,
             speed: 300,
             slidesToShow: 4,
             slidesToScroll: 4,
+            prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"></button>',
             responsive: [{
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 3,
                         slidesToScroll: 3,
                         infinite: true,
-                        dots: true
+                        dots: true,
                     }
                 },
                 {
@@ -183,9 +179,6 @@
                         slidesToScroll: 1
                     }
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
             ]
         });
 
@@ -196,6 +189,10 @@
             autoplaySpeed: 2000
         })
     </script>
+<!--    particlr.js-->
+    <script scr="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
+    </script>
+    <script scr="//threejs.org/examples/js/libs/stars.min.js"></script>
 </body>
 
 <footer>
