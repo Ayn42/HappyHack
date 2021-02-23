@@ -224,6 +224,7 @@ h2 {
 
 .second-section {
     background-color: #d6e6f9;
+    padding: 5px  20px 50px 20px;
 }
 
 .courses {
@@ -232,6 +233,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
+    padding:20px;
 }
 
 
