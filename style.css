@@ -396,15 +396,27 @@ footer {
 @media screen and (min-width: 481px) { }
 
 /*スマホ版のレスポンシブ*/
-@media screen and (max-width:479px) { 
-/*
-    .header li{
-        float:none;
+@media screen and (max-width:479px) {
+    
+    * {
+    padding: 0;
+    margin: 0;
+}
+    
+    .header nav{
+        display:none;
     }
     .title img{
-        width:90%;
-        display:block;
+        width:60vw;
+        margin: 0 auto;
     }
+    
+    .title p{
+        font-family: "Futura";
+        font-size: 100%;
+        text-align: center;
+    }
+/*
     .first-section{
         overflow: hidden;
     }
@@ -444,11 +456,20 @@ footer {
     .box4{
         order:1;
     }
+    
+    .box4 img{
+        width: 100%;
+    }
 */
+    
     
     h2 {
         font-size: 180%;
         padding-bottom: 20px;
+    }
+    
+    .first-section{
+        padding: 0;
     }
     
     .first-box {
@@ -496,6 +517,55 @@ footer {
         font-weight: bold;
         border-radius; 12px;
         
+    }
+    
+    .second-box{
+        flex-wrap: wrap-reverse;
+    }
+    
+    .box3{
+        width: 100%;
+        line-height:2;
+    }
+    
+    .box3 p{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .box3 a{
+        display: block;
+        margin: 20px auto;
+        text-decoration: none;
+        text-align: center;
+        background-color: yellow;
+        color: #fff;
+        font-size: 15px;
+        border-right: 12px;
+    }
+    
+    .box4{
+        width: 100%;
+        line-height:2;
+    }
+    
+    .box4 img{
+        width: 100%;
+        object-fit: contain;
+    }
+    
+    #map{
+        position:relative;
+        width: 100%;
+        padding-top: 75%;
+    }
+    
+    #map iframe{
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
     
 }
